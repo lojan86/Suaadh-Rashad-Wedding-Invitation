@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
+  <meta name="theme-color" content="#123D35">
+  <meta name="description" content="Walima Celebration of Rashad & Suaadh — Sunday, 1 November 2026 at Al-Zakki Banquet Hall, Addalaichenai">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Rashad & Suaadh — Walima Celebration</title>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts: Cormorant Garamond, Montserrat, Amiri -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Preload Key Images -->
+  <link rel="preload" as="image" href="assets/images/opening-arch.jpg">
+  <link rel="preload" as="image" href="assets/images/facing-couple.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕊️</text></svg>">
+</head>
+<body class="is-locked">
+
+  <!-- ============================================= -->
+  <!-- 00 — LUXURY LOADING SPLASH -->
+  <!-- ============================================= -->
+  <div id="loadingSplash" class="splash-screen" role="status" aria-live="polite">
+    <div class="splash-screen__content">
+      <div class="splash-screen__monogram">
+        <svg viewBox="0 0 100 100" class="splash-screen__svg">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="url(#goldGradSplash)" stroke-width="1" stroke-dasharray="290" stroke-dashoffset="290" class="splash-circle"/>
+          <text x="32" y="64" font-family="'Cormorant Garamond', serif" font-size="44" font-style="italic" fill="url(#goldGradSplash)">R</text>
+          <text x="52" y="64" font-family="'Cormorant Garamond', serif" font-size="44" font-style="italic" fill="url(#goldGradSplash)">S</text>
+          <defs>
+            <linearGradient id="goldGradSplash" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#F5E4B5"/>
+              <stop offset="50%" stop-color="#D4AF37"/>
+              <stop offset="100%" stop-color="#9C7728"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <p class="splash-screen__title">RASHAD & SUAADH</p>
+      <p class="splash-screen__subtitle">Walima Celebration</p>
+      <div class="splash-screen__spinner">
+        <span class="splash-screen__dot"></span>
+        <span class="splash-screen__dot"></span>
+        <span class="splash-screen__dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================= -->
+  <!-- FLOATING INTERACTION CONTROLS -->
+  <!-- ============================================= -->
+  <aside class="floating-controls" aria-label="Quick Controls">
+    <!-- Music Audio Toggle Button -->
+    <button id="musicToggle" class="float-btn float-btn--music" aria-label="Toggle Wedding Music" title="Play / Pause Music">
+      <span class="float-btn__icon music-icon-waves">
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+      </span>
+      <span class="float-btn__tooltip">Music On</span>
+    </button>
+
+    <!-- Quick RSVP Floating Button -->
+    <button id="quickRsvpBtn" class="float-btn float-btn--rsvp" aria-label="Open RSVP Form" title="RSVP to the Walima">
+      <svg viewBox="0 0 24 24" class="float-btn__icon" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+      <span class="float-btn__tooltip">RSVP</span>
+    </button>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="float-btn float-btn--top" aria-label="Scroll to Top" title="Back to Top">
+      <svg viewBox="0 0 24 24" class="float-btn__icon" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="18 15 12 9 6 15"/>
+      </svg>
+    </button>
+  </aside>
+
+  <!-- ============================================= -->
+  <!-- NAVIGATION BAR -->
+  <!-- ============================================= -->
+  <header class="site-header">
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__brand">
+        <span class="nav__brand-text">Rashad & Suaadh</span>
+      </div>
+      <ul class="nav__list">
+        <li><a href="#doors" class="nav__link">Entrance</a></li>
+        <li><a href="#hero" class="nav__link">Invitation</a></li>
+        <li><a href="#countdown-sec" class="nav__link">Countdown</a></li>
+        <li><a href="#calendar-sec" class="nav__link">Calendar</a></li>
+        <li><a href="#details-sec" class="nav__link">Details</a></li>
+        <li><a href="#gallery-sec" class="nav__link">Gallery</a></li>
+        <li><a href="#location-sec" class="nav__link">Location</a></li>
+        <li><a href="#dua-sec" class="nav__link">Blessing</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__rsvp-btn trigger-rsvp-btn" aria-label="Open RSVP modal">RSVP</button>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Drawer Backdrop -->
+  <div class="nav-drawer-backdrop" id="navBackdrop"></div>
+
+  <!-- ============================================= -->
+  <!-- MAIN INVITATION CONTAINER (MOBILE-FIRST FRAME) -->
+  <!-- ============================================= -->
+  <main class="invitation-container" id="invitationApp">
+
+    <!-- ============================================= -->
+    <!-- 01 — OPENING ISLAMIC DOORS (INTRO COVER) -->
+    <!-- ============================================= -->
+    <section class="doors-section" id="doors" aria-label="Royal Entrance">
+      <!-- Background Grand Archway -->
+      <div class="doors-section__bg">
+        <img
+          src="assets/images/opening-arch.jpg"
+          alt="Ivory Islamic carved archway with warm glowing lanterns and floral blooms"
+          class="doors-section__bg-img"
+          fetchpriority="high"
+        >
+        <div class="doors-section__bg-overlay"></div>
+      </div>
+
+      <!-- Left & Right Hanging Animated Lanterns -->
+      <div class="lamp-container lamp-container--left" aria-hidden="true">
+        <div class="lamp-chain"></div>
+        <div class="lamp-body lamp-body--sway-left">
+          <div class="lamp-glow-aura"></div>
+          <svg viewBox="0 0 60 120" class="lamp-svg">
+            <defs>
+              <radialGradient id="lampGlow1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#FFE082" stop-opacity="1"/>
+                <stop offset="60%" stop-color="#FFB300" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#FF8F00" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="goldBrass" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE082"/>
+                <stop offset="50%" stop-color="#C5A059"/>
+                <stop offset="100%" stop-color="#8D6E26"/>
+              </linearGradient>
+            </defs>
+            <!-- Hanging Ring -->
+            <circle cx="30" cy="8" r="6" fill="none" stroke="url(#goldBrass)" stroke-width="2.5"/>
+            <!-- Cap -->
+            <path d="M18,18 Q30,12 42,18 L48,32 L12,32 Z" fill="url(#goldBrass)"/>
+            <!-- Glass Chamber -->
+            <polygon points="14,34 46,34 40,86 20,86" fill="rgba(255, 235, 180, 0.25)" stroke="url(#goldBrass)" stroke-width="1.5"/>
+            <!-- Lamp Core / Flame -->
+            <circle cx="30" cy="58" r="14" fill="url(#lampGlow1)" class="lamp-flicker-flame"/>
+            <!-- Geometric Filigree Over Glass -->
+            <line x1="30" y1="34" x2="30" y2="86" stroke="url(#goldBrass)" stroke-width="1.2"/>
+            <line x1="14" y1="60" x2="46" y2="60" stroke="url(#goldBrass)" stroke-width="1"/>
+            <!-- Bottom Base & Tassel -->
+            <path d="M20,86 L40,86 L36,98 L24,98 Z" fill="url(#goldBrass)"/>
+            <circle cx="30" cy="103" r="3" fill="url(#goldBrass)"/>
+            <line x1="30" y1="106" x2="30" y2="118" stroke="url(#goldBrass)" stroke-width="1.5" stroke-dasharray="2,2"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="lamp-container lamp-container--right" aria-hidden="true">
+        <div class="lamp-chain"></div>
+        <div class="lamp-body lamp-body--sway-right">
+          <div class="lamp-glow-aura"></div>
+          <svg viewBox="0 0 60 120" class="lamp-svg">
+            <!-- Hanging Ring -->
+            <circle cx="30" cy="8" r="6" fill="none" stroke="url(#goldBrass)" stroke-width="2.5"/>
+            <!-- Cap -->
+            <path d="M18,18 Q30,12 42,18 L48,32 L12,32 Z" fill="url(#goldBrass)"/>
+            <!-- Glass Chamber -->
+            <polygon points="14,34 46,34 40,86 20,86" fill="rgba(255, 235, 180, 0.25)" stroke="url(#goldBrass)" stroke-width="1.5"/>
+            <!-- Lamp Core / Flame -->
+            <circle cx="30" cy="58" r="14" fill="url(#lampGlow1)" class="lamp-flicker-flame"/>
+            <!-- Geometric Filigree -->
+            <line x1="30" y1="34" x2="30" y2="86" stroke="url(#goldBrass)" stroke-width="1.2"/>
+            <line x1="14" y1="60" x2="46" y2="60" stroke="url(#goldBrass)" stroke-width="1"/>
+            <!-- Bottom Base & Tassel -->
+            <path d="M20,86 L40,86 L36,98 L24,98 Z" fill="url(#goldBrass)"/>
+            <circle cx="30" cy="103" r="3" fill="url(#goldBrass)"/>
+            <line x1="30" y1="106" x2="30" y2="118" stroke="url(#goldBrass)" stroke-width="1.5" stroke-dasharray="2,2"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Top Royal Heading on Opening Cover -->
+      <div class="doors-header">
+        <p class="doors-header__couplename">RASHAD & SUAADH</p>
+        <p class="doors-header__event">WALIMA CELEBRATION</p>
+      </div>
+
+      <!-- 3D Realistic Double Carved Doors Portal -->
+      <div class="doors-portal" id="doorPortal">
+        <!-- Golden Light Burst through the Door Seam -->
+        <div class="door-light-beam" id="doorLightBeam"></div>
+
+        <!-- Left Carved Door Leaf -->
+        <div class="door-leaf door-leaf--left" id="doorLeafLeft">
+          <div class="door-wood-panel">
+            <!-- Islamic Geometric Arabesque Pattern Overlay -->
+            <div class="door-arabesque-pattern"></div>
+            <!-- Carved Arch Medallion -->
+            <div class="door-carving">
+              <svg viewBox="0 0 160 300" class="door-svg-detail">
+                <path d="M10,290 L10,120 Q10,20 80,10 Q150,20 150,120 L150,290 Z" fill="none" stroke="rgba(212, 175, 55, 0.4)" stroke-width="2"/>
+                <circle cx="80" cy="130" r="35" fill="none" stroke="rgba(212, 175, 55, 0.35)" stroke-width="1.5"/>
+                <!-- 8-Pointed Islamic Star (Rub el Hizb) -->
+                <polygon points="80,105 87,120 102,120 90,130 95,145 80,135 65,145 70,130 58,120 73,120" fill="rgba(212, 175, 55, 0.25)" stroke="rgba(212, 175, 55, 0.6)" stroke-width="1"/>
+                <line x1="80" y1="10" x2="80" y2="290" stroke="rgba(212, 175, 55, 0.2)" stroke-width="1"/>
+              </svg>
+            </div>
+            <!-- Antique Brass Door Handle Ring -->
+            <div class="door-handle door-handle--left">
+              <div class="door-handle__plate"></div>
+              <div class="door-handle__ring"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Carved Door Leaf -->
+        <div class="door-leaf door-leaf--right" id="doorLeafRight">
+          <div class="door-wood-panel">
+            <div class="door-arabesque-pattern"></div>
+            <div class="door-carving">
+              <svg viewBox="0 0 160 300" class="door-svg-detail">
+                <path d="M150,290 L150,120 Q150,20 80,10 Q10,20 10,120 L10,290 Z" fill="none" stroke="rgba(212, 175, 55, 0.4)" stroke-width="2"/>
+                <circle cx="80" cy="130" r="35" fill="none" stroke="rgba(212, 175, 55, 0.35)" stroke-width="1.5"/>
+                <polygon points="80,105 87,120 102,120 90,130 95,145 80,135 65,145 70,130 58,120 73,120" fill="rgba(212, 175, 55, 0.25)" stroke="rgba(212, 175, 55, 0.6)" stroke-width="1"/>
+                <line x1="80" y1="10" x2="80" y2="290" stroke="rgba(212, 175, 55, 0.2)" stroke-width="1"/>
+              </svg>
+            </div>
+            <div class="door-handle door-handle--right">
+              <div class="door-handle__plate"></div>
+              <div class="door-handle__ring"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Button: Tap to Open & Start Music -->
+      <div class="doors-action" id="doorActionWrap">
+        <button id="tapToOpenBtn" class="doors-enter-btn" aria-label="Tap to open invitation and start music">
+          <span class="doors-enter-btn__sparkle">✦</span>
+          <span class="doors-enter-btn__text">TAP TO OPEN</span>
+          <span class="doors-enter-btn__sparkle">✦</span>
+          <div class="doors-enter-btn__sub">
+            <svg viewBox="0 0 24 24" class="doors-enter-btn__music-icon" fill="currentColor">
+              <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+            <span>Starts Celebration Melody</span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Re-close Door Button (Visible after opened) -->
+      <button id="replayDoorBtn" class="door-replay-btn" aria-label="Close Doors">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M1 4v6h6M23 20v-6h-6"/>
+          <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+        </svg>
+        <span>Re-enter Entrance</span>
+      </button>
+
+      <!-- Scroll Down Indicator -->
+      <div class="doors-scroll-hint" id="doorsScrollHint">
+        <span class="doors-scroll-hint__text">Scroll to Begin</span>
+        <div class="doors-scroll-hint__arrow"></div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 02 — HERO INVITATION -->
+    <!-- ============================================= -->
+    <section class="hero-section" id="hero" aria-label="Hero Invitation">
+      <!-- Background Paper Parchment Texture -->
+      <div class="parchment-texture" aria-hidden="true"></div>
+
+      <!-- Ornate Islamic Pointed Arch Framing -->
+      <div class="hero-arch-frame" aria-hidden="true">
+        <!-- SVG Islamic Architectural Arch Contour -->
+        <svg viewBox="0 0 400 600" preserveAspectRatio="none" class="hero-arch-svg">
+          <defs>
+            <linearGradient id="goldArchStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.6"/>
+              <stop offset="50%" stop-color="#C5A059" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#8D6E26" stop-opacity="0.5"/>
+            </linearGradient>
+          </defs>
+          <path d="M20,590 L20,200 Q20,100 200,20 Q380,100 380,200 L380,590" fill="none" stroke="url(#goldArchStroke)" stroke-width="1.5"/>
+          <path d="M28,590 L28,205 Q28,110 200,32 Q372,110 372,205 L372,590" fill="none" stroke="url(#goldArchStroke)" stroke-width="0.75" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+
+      <!-- Side Lanterns & Floral Parallax Accents -->
+      <div class="hero-side-lantern hero-side-lantern--left parallax-drift" data-speed="0.08" aria-hidden="true">
+        <div class="lamp-body lamp-body--sway-left">
+          <div class="lamp-glow-aura"></div>
+          <svg viewBox="0 0 40 80" class="mini-lamp-svg">
+            <circle cx="20" cy="6" r="4" fill="none" stroke="#C5A059" stroke-width="1.5"/>
+            <path d="M12,14 Q20,8 28,14 L32,24 L8,24 Z" fill="#C5A059"/>
+            <polygon points="10,25 30,25 26,60 14,60" fill="rgba(255, 230, 160, 0.3)" stroke="#C5A059" stroke-width="1"/>
+            <circle cx="20" cy="42" r="8" fill="#FFC107" class="lamp-flicker-flame"/>
+            <path d="M14,60 L26,60 L22,70 L18,70 Z" fill="#C5A059"/>
+            <circle cx="20" cy="74" r="2" fill="#C5A059"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-side-lantern hero-side-lantern--right parallax-drift" data-speed="0.08" aria-hidden="true">
+        <div class="lamp-body lamp-body--sway-right">
+          <div class="lamp-glow-aura"></div>
+          <svg viewBox="0 0 40 80" class="mini-lamp-svg">
+            <circle cx="20" cy="6" r="4" fill="none" stroke="#C5A059" stroke-width="1.5"/>
+            <path d="M12,14 Q20,8 28,14 L32,24 L8,24 Z" fill="#C5A059"/>
+            <polygon points="10,25 30,25 26,60 14,60" fill="rgba(255, 230, 160, 0.3)" stroke="#C5A059" stroke-width="1"/>
+            <circle cx="20" cy="42" r="8" fill="#FFC107" class="lamp-flicker-flame"/>
+            <path d="M14,60 L26,60 L22,70 L18,70 Z" fill="#C5A059"/>
+            <circle cx="20" cy="74" r="2" fill="#C5A059"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Hero Main Content -->
+      <div class="hero-content">
+        <!-- Royal Monogram with Botanical Gold Wreath -->
+        <div class="hero-monogram reveal" aria-label="RS Royal Monogram">
+          <svg viewBox="0 0 140 140" class="monogram-svg">
+            <defs>
+              <linearGradient id="monogramGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F7E7B4"/>
+                <stop offset="50%" stop-color="#D4AF37"/>
+                <stop offset="100%" stop-color="#8F6E22"/>
+              </linearGradient>
+            </defs>
+            <!-- Decorative Outer Ring with Dots -->
+            <circle cx="70" cy="70" r="64" fill="none" stroke="url(#monogramGold)" stroke-width="0.8" opacity="0.6"/>
+            <circle cx="70" cy="70" r="59" fill="none" stroke="url(#monogramGold)" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.8"/>
+            <!-- Botanical Vine Flourishes -->
+            <path d="M70,8 Q85,18 95,30 Q80,25 70,8 Z" fill="url(#monogramGold)" opacity="0.7"/>
+            <path d="M70,8 Q55,18 45,30 Q60,25 70,8 Z" fill="url(#monogramGold)" opacity="0.7"/>
+            <path d="M70,132 Q85,122 95,110 Q80,115 70,132 Z" fill="url(#monogramGold)" opacity="0.7"/>
+            <path d="M70,132 Q55,122 45,110 Q60,115 70,132 Z" fill="url(#monogramGold)" opacity="0.7"/>
+            <!-- Intertwined RS Calligraphy -->
+            <text x="44" y="90" font-family="'Cormorant Garamond', serif" font-size="62" font-style="italic" font-weight="300" fill="url(#monogramGold)" letter-spacing="-4">R</text>
+            <text x="74" y="90" font-family="'Cormorant Garamond', serif" font-size="62" font-style="italic" font-weight="300" fill="url(#monogramGold)" letter-spacing="-4">S</text>
+          </svg>
+        </div>
+
+        <p class="hero-event-subtitle reveal">WALIMA CELEBRATION</p>
+
+        <!-- Ornate Gold Divider -->
+        <div class="ornate-divider reveal" aria-hidden="true">
+          <svg viewBox="0 0 240 24" class="ornate-divider__svg">
+            <line x1="10" y1="12" x2="90" y2="12" stroke="#C5A059" stroke-width="0.8"/>
+            <!-- Center Rub-el-Hizb Star Medallion -->
+            <polygon points="120,4 123,10 128,10 124,14 126,20 120,16 114,20 116,14 112,10 117,10" fill="#D4AF37"/>
+            <circle cx="106" cy="12" r="2.5" fill="#C5A059"/>
+            <circle cx="134" cy="12" r="2.5" fill="#C5A059"/>
+            <line x1="150" y1="12" x2="230" y2="12" stroke="#C5A059" stroke-width="0.8"/>
+          </svg>
+        </div>
+
+        <!-- Bismillah / Invitation Blessing -->
+        <p class="hero-blessing reveal">
+          With the blessings of Allah, we invite you<br>
+          to join us as we celebrate the Walima of
+        </p>
+
+        <!-- Couple Names -->
+        <h1 class="hero-couple-names reveal">
+          <span class="hero-name-first">RASHAD</span>
+          <span class="hero-name-amp">&amp;</span>
+          <span class="hero-name-second">SUAADH</span>
+        </h1>
+
+        <!-- Subtle Floral Cascade Corner Details -->
+        <div class="hero-floral-base reveal" aria-hidden="true">
+          <svg viewBox="0 0 200 40" class="floral-base-svg">
+            <path d="M100,20 Q120,5 140,20 Q160,35 180,20" fill="none" stroke="#C5A059" stroke-width="0.75" opacity="0.6"/>
+            <path d="M100,20 Q80,5 60,20 Q40,35 20,20" fill="none" stroke="#C5A059" stroke-width="0.75" opacity="0.6"/>
+            <circle cx="100" cy="20" r="3" fill="#D4AF37"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 03 — COUNTDOWN -->
+    <!-- ============================================= -->
+    <section class="countdown-section" id="countdown-sec" aria-label="Countdown to Walima">
+      <div class="countdown-section__inner">
+        <div class="section-badge reveal">
+          <span class="section-badge__icon">✦</span>
+          <span class="section-badge__text">SAVE THE SACRED DATE</span>
+          <span class="section-badge__icon">✦</span>
+        </div>
+
+        <h2 class="countdown-section__title reveal">COUNTING DOWN TO OUR WALIMA</h2>
+
+        <!-- Circular Gold-Bordered Rings -->
+        <div class="countdown-grid reveal" id="countdownTimer" role="timer" aria-live="polite">
+          <!-- Days Ring -->
+          <div class="countdown-card">
+            <div class="countdown-ring">
+              <svg viewBox="0 0 100 100" class="countdown-ring-svg">
+                <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(212, 175, 55, 0.25)" stroke-width="1.5"/>
+                <circle cx="50" cy="50" r="40" fill="rgba(255, 255, 255, 0.65)" stroke="none"/>
+              </svg>
+              <div class="countdown-value" id="cdDays">00</div>
+            </div>
+            <span class="countdown-label">DAYS</span>
+          </div>
+
+          <!-- Hours Ring -->
+          <div class="countdown-card">
+            <div class="countdown-ring">
+              <svg viewBox="0 0 100 100" class="countdown-ring-svg">
+                <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(212, 175, 55, 0.25)" stroke-width="1.5"/>
+                <circle cx="50" cy="50" r="40" fill="rgba(255, 255, 255, 0.65)" stroke="none"/>
+              </svg>
+              <div class="countdown-value" id="cdHours">00</div>
+            </div>
+            <span class="countdown-label">HOURS</span>
+          </div>
+
+          <!-- Minutes Ring -->
+          <div class="countdown-card">
+            <div class="countdown-ring">
+              <svg viewBox="0 0 100 100" class="countdown-ring-svg">
+                <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(212, 175, 55, 0.25)" stroke-width="1.5"/>
+                <circle cx="50" cy="50" r="40" fill="rgba(255, 255, 255, 0.65)" stroke="none"/>
+              </svg>
+              <div class="countdown-value" id="cdMinutes">00</div>
+            </div>
+            <span class="countdown-label">MINUTES</span>
+          </div>
+
+          <!-- Seconds Ring -->
+          <div class="countdown-card">
+            <div class="countdown-ring">
+              <svg viewBox="0 0 100 100" class="countdown-ring-svg">
+                <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(212, 175, 55, 0.25)" stroke-width="1.5"/>
+                <circle cx="50" cy="50" r="40" fill="rgba(255, 255, 255, 0.65)" stroke="none"/>
+              </svg>
+              <div class="countdown-value" id="cdSeconds">00</div>
+            </div>
+            <span class="countdown-label">SECONDS</span>
+          </div>
+        </div>
+
+        <!-- Note matching design mockup -->
+        <p class="countdown-quote reveal">
+          When the time reaches zero,<br>
+          it becomes: <em>Alhamdulillah, today is the day.</em>
+        </p>
+
+        <!-- Completed State -->
+        <p class="countdown-completed" id="cdCompleted" hidden>
+          ✨ Alhamdulillah, today is our blessed Walima day! ✨
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 04 — COUPLE SCENE 1 (FACING EACH OTHER) -->
+    <!-- ============================================= -->
+    <section class="visual-scene visual-scene--facing" aria-label="Bride and Groom Facing">
+      <div class="visual-scene__frame">
+        <img
+          src="assets/images/facing-couple.jpg"
+          alt="Bride and groom seated facing each other in traditional wedding attire in a royal Islamic hall with candlelit lanterns"
+          class="visual-scene__image parallax-drift"
+          data-speed="0.05"
+          loading="lazy"
+        >
+        <div class="visual-scene__vignette"></div>
+
+        <!-- Decorative Floral Arch Border Silhouette -->
+        <div class="scene-arch-overlay" aria-hidden="true">
+          <svg viewBox="0 0 400 120" preserveAspectRatio="none" class="arch-top-curve">
+            <path d="M0,0 L400,0 L400,30 Q200,90 0,30 Z" fill="#F5F0E7"/>
+          </svg>
+          <svg viewBox="0 0 400 120" preserveAspectRatio="none" class="arch-bottom-curve">
+            <path d="M0,120 L400,120 L400,90 Q200,30 0,90 Z" fill="#F5F0E7"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 05 — NOVEMBER 2026 CALENDAR -->
+    <!-- ============================================= -->
+    <section class="calendar-section" id="calendar-sec" aria-label="Wedding Date Calendar">
+      <div class="calendar-card reveal">
+        <!-- Card Arch Header Ornament -->
+        <div class="calendar-card__ornament" aria-hidden="true">
+          <svg viewBox="0 0 120 30" class="arch-ornament-svg">
+            <path d="M10,25 Q60,0 110,25" fill="none" stroke="#C5A059" stroke-width="1"/>
+            <polygon points="60,6 63,12 68,12 64,16 66,22 60,18 54,22 56,16 52,12 57,12" fill="#D4AF37"/>
+          </svg>
+        </div>
+
+        <header class="calendar-card__header">
+          <h2 class="calendar-month-title">NOVEMBER</h2>
+          <p class="calendar-year-title">2026</p>
+        </header>
+
+        <!-- Calendar Grid -->
+        <div class="calendar-table" role="table" aria-label="November 2026">
+          <div class="calendar-table__head" role="row">
+            <span role="columnheader">SUN</span>
+            <span role="columnheader">MON</span>
+            <span role="columnheader">TUE</span>
+            <span role="columnheader">WED</span>
+            <span role="columnheader">THU</span>
+            <span role="columnheader">FRI</span>
+            <span role="columnheader">SAT</span>
+          </div>
+
+          <!-- Week 1: 1 Nov is Sunday -->
+          <div class="calendar-table__row" role="row">
+            <div class="calendar-cell calendar-cell--event" role="cell" aria-label="1 November 2026 - Walima Celebration Day">
+              <div class="cell-heart-badge">
+                <svg viewBox="0 0 32 32" class="heart-svg">
+                  <path d="M16 28 C16 28 3 19 3 10 C3 5.5 6.5 2 11 2 C13.8 2 15.5 3.5 16 5 C16.5 3.5 18.2 2 21 2 C25.5 2 29 5.5 29 10 C29 19 16 28 16 28 Z" fill="#E8D3CE" stroke="#D4AF37" stroke-width="1.2"/>
+                </svg>
+                <span class="cell-heart-num">1</span>
+              </div>
+            </div>
+            <span class="calendar-cell" role="cell">2</span>
+            <span class="calendar-cell" role="cell">3</span>
+            <span class="calendar-cell" role="cell">4</span>
+            <span class="calendar-cell" role="cell">5</span>
+            <span class="calendar-cell" role="cell">6</span>
+            <span class="calendar-cell" role="cell">7</span>
+          </div>
+
+          <!-- Week 2 -->
+          <div class="calendar-table__row" role="row">
+            <span class="calendar-cell" role="cell">8</span>
+            <span class="calendar-cell" role="cell">9</span>
+            <span class="calendar-cell" role="cell">10</span>
+            <span class="calendar-cell" role="cell">11</span>
+            <span class="calendar-cell" role="cell">12</span>
+            <span class="calendar-cell" role="cell">13</span>
+            <span class="calendar-cell" role="cell">14</span>
+          </div>
+
+          <!-- Week 3 -->
+          <div class="calendar-table__row" role="row">
+            <span class="calendar-cell" role="cell">15</span>
+            <span class="calendar-cell" role="cell">16</span>
+            <span class="calendar-cell" role="cell">17</span>
+            <span class="calendar-cell" role="cell">18</span>
+            <span class="calendar-cell" role="cell">19</span>
+            <span class="calendar-cell" role="cell">20</span>
+            <span class="calendar-cell" role="cell">21</span>
+          </div>
+
+          <!-- Week 4 -->
+          <div class="calendar-table__row" role="row">
+            <span class="calendar-cell" role="cell">22</span>
+            <span class="calendar-cell" role="cell">23</span>
+            <span class="calendar-cell" role="cell">24</span>
+            <span class="calendar-cell" role="cell">25</span>
+            <span class="calendar-cell" role="cell">26</span>
+            <span class="calendar-cell" role="cell">27</span>
+            <span class="calendar-cell" role="cell">28</span>
+          </div>
+
+          <!-- Week 5 -->
+          <div class="calendar-table__row" role="row">
+            <span class="calendar-cell" role="cell">29</span>
+            <span class="calendar-cell" role="cell">30</span>
+            <span class="calendar-cell calendar-cell--blank" role="cell"></span>
+            <span class="calendar-cell calendar-cell--blank" role="cell"></span>
+            <span class="calendar-cell calendar-cell--blank" role="cell"></span>
+            <span class="calendar-cell calendar-cell--blank" role="cell"></span>
+            <span class="calendar-cell calendar-cell--blank" role="cell"></span>
+          </div>
+        </div>
+
+        <!-- Date & Time Summary -->
+        <div class="calendar-summary">
+          <p class="calendar-summary__datetime">01 NOVEMBER 2026 &nbsp;|&nbsp; 12:30 PM</p>
+          <p class="calendar-summary__hall">AL-ZAKKI BANQUET HALL, ADDALAICHENAI</p>
+        </div>
+
+        <p class="calendar-invitation-line">
+          We would be honoured by your presence<br>
+          as we celebrate this blessed occasion.
+        </p>
+
+        <!-- Add to Calendar Action Button -->
+        <div class="calendar-actions">
+          <button id="addToCalBtn" class="btn-gold-outline" aria-label="Add Walima to Calendar">
+            <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span>Save to Calendar</span>
+          </button>
+
+          <!-- Dropdown Options for Calendar -->
+          <div class="cal-dropdown" id="calDropdown" hidden>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Rashad+%26+Suaadh+Walima+Celebration&dates=20261101T070000Z/20261101T110000Z&details=Walima+Celebration+of+Rashad+%26+Suaadh+at+Al-Zakki+Banquet+Hall,+Addalaichenai&location=Al-Zakki+Banquet+Hall,+Main+Street,+Addalaichenai" target="_blank" rel="noopener" class="cal-option">
+              Google Calendar
+            </a>
+            <button id="downloadIcsBtn" class="cal-option">
+              Apple / Outlook (.ics)
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 06 — WALIMA DETAILS -->
+    <!-- ============================================= -->
+    <section class="walima-details-section" id="details-sec" aria-label="Walima Event Details">
+      <div class="details-card reveal">
+        <!-- Arch Framing with Lantern -->
+        <div class="details-card__arch-top" aria-hidden="true">
+          <svg viewBox="0 0 200 40" class="arch-top-svg">
+            <path d="M20,40 Q100,0 180,40" fill="none" stroke="#C5A059" stroke-width="1"/>
+            <circle cx="100" cy="18" r="3" fill="#D4AF37"/>
+          </svg>
+        </div>
+
+        <h2 class="details-card__title">WALIMA</h2>
+        <div class="details-card__gold-line" aria-hidden="true"></div>
+
+        <div class="details-info-list">
+          <!-- Date -->
+          <div class="details-info-item">
+            <div class="details-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <div class="details-info-text">
+              <p class="info-label">DATE</p>
+              <p class="info-value">Sunday, 1 November 2026</p>
+            </div>
+          </div>
+
+          <!-- Time -->
+          <div class="details-info-item">
+            <div class="details-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="details-info-text">
+              <p class="info-label">TIME</p>
+              <p class="info-value">12:30 PM Onwards</p>
+            </div>
+          </div>
+
+          <!-- Venue -->
+          <div class="details-info-item">
+            <div class="details-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="details-info-text">
+              <p class="info-label">VENUE</p>
+              <p class="info-value font-highlight">Al-Zakki Banquet Hall</p>
+              <p class="info-sub">Main Street, Addalaichenai</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RSVP Trigger Button -->
+        <button class="btn-royal-solid trigger-rsvp-btn">
+          <span>Confirm Attendance (RSVP)</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 07 — COUPLE SCENE 2 (BACK VIEW) -->
+    <!-- ============================================= -->
+    <section class="visual-scene visual-scene--back" aria-label="Bride and Groom Back View Overlooking Grand Arch">
+      <div class="visual-scene__frame">
+        <img
+          src="assets/images/back-couple.jpg"
+          alt="Bride and groom sitting side by side viewed from behind, with royal bridal veil cascading down steps and illuminated lanterns"
+          class="visual-scene__image parallax-drift"
+          data-speed="0.06"
+          loading="lazy"
+        >
+        <div class="visual-scene__vignette"></div>
+
+        <div class="scene-arch-overlay" aria-hidden="true">
+          <svg viewBox="0 0 400 120" preserveAspectRatio="none" class="arch-top-curve">
+            <path d="M0,0 L400,0 L400,30 Q200,90 0,30 Z" fill="#F5F0E7"/>
+          </svg>
+          <svg viewBox="0 0 400 120" preserveAspectRatio="none" class="arch-bottom-curve">
+            <path d="M0,120 L400,120 L400,90 Q200,30 0,90 Z" fill="#F5F0E7"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 08 — GALLERY & MEMORIES (WITH INTERACTIVE LIGHTBOX) -->
+    <!-- ============================================= -->
+    <section class="gallery-section" id="gallery-sec" aria-label="Wedding Gallery">
+      <div class="gallery-section__inner">
+        <div class="section-badge reveal">
+          <span class="section-badge__icon">✦</span>
+          <span class="section-badge__text">MOMENTS OF LOVE</span>
+          <span class="section-badge__icon">✦</span>
+        </div>
+
+        <h2 class="gallery-section__title reveal">OUR CELEBRATION GALLERY</h2>
+        <p class="gallery-section__sub reveal">Glimpses of sacred heritage, beauty, and joy</p>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid reveal">
+          <!-- Item 1: Couple Facing -->
+          <div class="gallery-item gallery-item--wide" data-index="0" data-caption="A Sacred Union • Facing Each Other in the Ivory Hall" tabindex="0" role="button" aria-label="View photo: Facing each other">
+            <img src="assets/images/facing-couple.jpg" alt="Bride and groom seated facing each other" loading="lazy">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__badge">✦ View ✦</span>
+              <p class="gallery-item__title">A Sacred Union</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Banquet Hall Decor -->
+          <div class="gallery-item" data-index="1" data-caption="The Grand Venue • Al-Zakki Banquet Hall Decor with Chandeliers & Roses" tabindex="0" role="button" aria-label="View photo: Banquet Hall Decor">
+            <img src="assets/images/gallery-hall.jpg" alt="Al-Zakki Banquet Hall luxury decor" loading="lazy">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__badge">✦ View ✦</span>
+              <p class="gallery-item__title">The Grand Venue</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Bridal Henna & Rings -->
+          <div class="gallery-item" data-index="2" data-caption="Sacred Vows • Intricate Bridal Henna & Pure Gold Rings" tabindex="0" role="button" aria-label="View photo: Bridal Henna and Rings">
+            <img src="assets/images/gallery-henna.jpg" alt="Bridal henna and gold wedding rings" loading="lazy">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__badge">✦ View ✦</span>
+              <p class="gallery-item__title">Sacred Vows &amp; Rings</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Bride & Groom Back View -->
+          <div class="gallery-item" data-index="3" data-caption="The Walk of Eternity • Bride & Groom Looking Towards the Minaret" tabindex="0" role="button" aria-label="View photo: Looking towards the minaret">
+            <img src="assets/images/back-couple.jpg" alt="Bride and groom back view" loading="lazy">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__badge">✦ View ✦</span>
+              <p class="gallery-item__title">The Walk of Eternity</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Grand Archway -->
+          <div class="gallery-item" data-index="4" data-caption="Architectural Splendour • The Ivory Islamic Archway" tabindex="0" role="button" aria-label="View photo: Ivory Islamic Archway">
+            <img src="assets/images/opening-arch.jpg" alt="Ivory Islamic arch with lanterns" loading="lazy">
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__badge">✦ View ✦</span>
+              <p class="gallery-item__title">Architectural Splendour</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox" hidden>
+      <div class="lightbox-modal__backdrop" id="lightboxBackdrop"></div>
+      
+      <div class="lightbox-modal__container">
+        <!-- Close Button -->
+        <button id="lightboxClose" class="lightbox-modal__close" aria-label="Close Lightbox">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+
+        <!-- Navigation Buttons -->
+        <button id="lightboxPrev" class="lightbox-modal__nav lightbox-modal__nav--prev" aria-label="Previous photo">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+
+        <button id="lightboxNext" class="lightbox-modal__nav lightbox-modal__nav--next" aria-label="Next photo">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </button>
+
+        <!-- Lightbox Main Image & Caption -->
+        <div class="lightbox-modal__media-wrap">
+          <img id="lightboxImg" src="" alt="" class="lightbox-modal__img">
+          <div class="lightbox-modal__footer">
+            <p id="lightboxCaption" class="lightbox-modal__caption"></p>
+            <span id="lightboxCounter" class="lightbox-modal__counter">1 / 5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- 09 — LOCATION + QR CODE -->
+    <!-- ============================================= -->
+    <section class="location-section" id="location-sec" aria-label="Directions and Location">
+      <div class="location-card reveal">
+        <h2 class="location-card__title">FIND US</h2>
+        
+        <div class="location-card__grid">
+          <!-- Left Column: Venue Info & Action Button -->
+          <div class="location-card__info-col">
+            <div class="location-card__hall">
+              <p class="hall-badge">VENUE &amp; CELEBRATION</p>
+              <h3 class="hall-name">Al-Zakki Banquet Hall</h3>
+              <p class="hall-address">Main Street, Addalaichenai, Sri Lanka</p>
+              <p class="hall-details">Walima Lunch &amp; Gathering &bull; 12:30 PM Onwards</p>
+            </div>
+
+            <!-- Google Maps View Location Button -->
+            <a
+              href="https://maps.google.com/?q=Al-Zakki+Banquet+Hall+Addalaichenai"
+              target="_blank"
+              rel="noopener"
+              class="btn-royal-solid location-map-btn"
+              aria-label="Open Al-Zakki Banquet Hall location on Google Maps"
+            >
+              <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>VIEW LOCATION ON MAPS</span>
+            </a>
+          </div>
+
+          <!-- Right Column: Framed QR Code -->
+          <div class="location-card__qr-col">
+            <div class="qr-block">
+              <p class="qr-block__label">SCAN FOR DIRECTIONS</p>
+              <div class="qr-frame">
+                <div class="qr-corner qr-corner--tl" aria-hidden="true"></div>
+                <div class="qr-corner qr-corner--tr" aria-hidden="true"></div>
+                <div class="qr-corner qr-corner--bl" aria-hidden="true"></div>
+                <div class="qr-corner qr-corner--br" aria-hidden="true"></div>
+                <img
+                  src="assets/images/qr-directions.jpg"
+                  alt="QR Code for Google Maps directions to Al-Zakki Banquet Hall, Addalaichenai"
+                  class="qr-image"
+                  loading="lazy"
+                  width="220"
+                  height="220"
+                >
+              </div>
+              <p class="qr-hint">Scan with your mobile camera for turn-by-turn navigation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 10 — ISLAMIC DUA (BLESSING) WITH LAMP ANIMATION -->
+    <!-- ============================================= -->
+    <section class="dua-section" id="dua-sec" aria-label="Islamic Blessing">
+      <!-- Islamic Arch Decorative Header -->
+      <div class="dua-arch-frame" aria-hidden="true">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="none" class="dua-arch-svg">
+          <path d="M30,300 L30,120 Q30,20 200,10 Q370,20 370,120 L370,300" fill="none" stroke="rgba(212, 175, 55, 0.4)" stroke-width="1.5"/>
+          <path d="M40,300 L40,125 Q40,30 200,22 Q360,30 360,125 L360,300" fill="none" stroke="rgba(212, 175, 55, 0.25)" stroke-width="0.8" stroke-dasharray="3,3"/>
+        </svg>
+      </div>
+
+      <!-- Center Hanging Animated Glowing Lamp / Lantern -->
+      <div class="dua-central-lamp" aria-hidden="true">
+        <div class="lamp-chain lamp-chain--long"></div>
+        <div class="lamp-body lamp-body--sway-center">
+          <div class="lamp-glow-aura lamp-glow-aura--large"></div>
+          <svg viewBox="0 0 60 120" class="lamp-svg">
+            <circle cx="30" cy="8" r="6" fill="none" stroke="url(#goldBrass)" stroke-width="2.5"/>
+            <path d="M18,18 Q30,12 42,18 L48,32 L12,32 Z" fill="url(#goldBrass)"/>
+            <polygon points="14,34 46,34 40,86 20,86" fill="rgba(255, 235, 180, 0.3)" stroke="url(#goldBrass)" stroke-width="1.5"/>
+            <!-- Animated Flame / Lamp Light -->
+            <circle cx="30" cy="58" r="16" fill="url(#lampGlow1)" class="lamp-flicker-flame"/>
+            <line x1="30" y1="34" x2="30" y2="86" stroke="url(#goldBrass)" stroke-width="1.2"/>
+            <line x1="14" y1="60" x2="46" y2="60" stroke="url(#goldBrass)" stroke-width="1"/>
+            <path d="M20,86 L40,86 L36,98 L24,98 Z" fill="url(#goldBrass)"/>
+            <circle cx="30" cy="103" r="3" fill="url(#goldBrass)"/>
+            <line x1="30" y1="106" x2="30" y2="118" stroke="url(#goldBrass)" stroke-width="1.5" stroke-dasharray="2,2"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Dua Text Content -->
+      <div class="dua-content reveal">
+        <!-- Calligraphy in Amiri font -->
+        <blockquote class="dua-arabic" lang="ar" dir="rtl">
+          بَارَكَ اللهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+        </blockquote>
+
+        <!-- Ornate Gold Divider -->
+        <div class="ornate-divider" aria-hidden="true">
+          <svg viewBox="0 0 200 20" class="ornate-divider__svg">
+            <line x1="10" y1="10" x2="80" y2="10" stroke="#C5A059" stroke-width="0.75"/>
+            <polygon points="100,3 103,9 108,9 104,13 106,19 100,15 94,19 96,13 92,9 97,9" fill="#D4AF37"/>
+            <line x1="120" y1="10" x2="190" y2="10" stroke="#C5A059" stroke-width="0.75"/>
+          </svg>
+        </div>
+
+        <p class="dua-english">
+          May Allah bless you, shower His blessings upon you,<br>
+          and unite you both in goodness.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- 11 — CLOSING & GRATITUDE -->
+    <!-- ============================================= -->
+    <section class="closing-section" aria-label="Closing Gratitude">
+      <div class="closing-content reveal">
+        <p class="closing-with">With love and gratitude,</p>
+        <h2 class="closing-couple-names">RASHAD &amp; SUAADH</h2>
+        
+        <div class="closing-divider" aria-hidden="true">
+          <svg viewBox="0 0 100 16" class="closing-divider-svg">
+            <line x1="0" y1="8" x2="40" y2="8" stroke="#C5A059" stroke-width="0.75"/>
+            <circle cx="50" cy="8" r="2.5" fill="#D4AF37"/>
+            <line x1="60" y1="8" x2="100" y2="8" stroke="#C5A059" stroke-width="0.75"/>
+          </svg>
+        </div>
+
+        <p class="closing-wishes">
+          We look forward to celebrating this<br>
+          beautiful occasion with you,<br>
+          <em>Insha'Allah.</em>
+        </p>
+
+        <!-- Bottom Base Decorative Arch & Subtle Lantern -->
+        <div class="closing-base-arch" aria-hidden="true">
+          <div class="closing-lantern">
+            <div class="lamp-glow-aura lamp-glow-aura--small"></div>
+            <svg viewBox="0 0 40 60" class="mini-lamp-svg">
+              <path d="M12,8 Q20,2 28,8 L32,16 L8,16 Z" fill="#C5A059"/>
+              <polygon points="10,17 30,17 26,45 14,45" fill="rgba(255, 230, 160, 0.3)" stroke="#C5A059" stroke-width="1"/>
+              <circle cx="20" cy="30" r="6" fill="#FFC107" class="lamp-flicker-flame"/>
+              <path d="M14,45 L26,45 L22,54 L18,54 Z" fill="#C5A059"/>
+            </svg>
+          </div>
+          <svg viewBox="0 0 300 60" class="closing-arch-svg">
+            <path d="M10,60 Q150,0 290,60" fill="none" stroke="rgba(212, 175, 55, 0.3)" stroke-width="1"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================= -->
+  <!-- INTERACTIVE RSVP MODAL -->
+  <!-- ============================================= -->
+  <div id="rsvpModal" class="rsvp-modal" role="dialog" aria-modal="true" aria-labelledby="rsvpModalTitle" hidden>
+    <div class="rsvp-modal__backdrop" id="rsvpBackdrop"></div>
+    <div class="rsvp-modal__container">
+      <button id="rsvpClose" class="rsvp-modal__close" aria-label="Close RSVP form">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div class="rsvp-modal__header">
+        <p class="rsvp-modal__badge">✦ WALIMA CELEBRATION ✦</p>
+        <h3 id="rsvpModalTitle" class="rsvp-modal__title">Confirm Your Presence</h3>
+        <p class="rsvp-modal__desc">Rashad &amp; Suaadh look forward to celebrating with you</p>
+      </div>
+
+      <form id="rsvpForm" class="rsvp-form">
+        <!-- Guest Name -->
+        <div class="rsvp-form-group">
+          <label for="rsvpName" class="rsvp-label">Full Name <span class="required">*</span></label>
+          <input type="text" id="rsvpName" name="name" class="rsvp-input" placeholder="e.g. Brother Ahmad & Family" required>
+        </div>
+
+        <!-- Attendance Confirmation -->
+        <div class="rsvp-form-group">
+          <label class="rsvp-label">Will you be joining us? <span class="required">*</span></label>
+          <div class="rsvp-radio-options">
+            <label class="rsvp-radio-card">
+              <input type="radio" name="attendance" value="attending" checked>
+              <div class="radio-card-content">
+                <span class="radio-card-icon">🌸</span>
+                <span class="radio-card-title">Joyfully Accept</span>
+                <span class="radio-card-sub">Can't wait to celebrate!</span>
+              </div>
+            </label>
+
+            <label class="rsvp-radio-card">
+              <input type="radio" name="attendance" value="declining">
+              <div class="radio-card-content">
+                <span class="radio-card-icon">💌</span>
+                <span class="radio-card-title">Regretfully Decline</span>
+                <span class="radio-card-sub">Will celebrate in spirit</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Number of Guests -->
+        <div class="rsvp-form-group" id="guestsCountGroup">
+          <label for="rsvpGuests" class="rsvp-label">Number of Guests Attending</label>
+          <select id="rsvpGuests" name="guests" class="rsvp-select">
+            <option value="1">1 Person</option>
+            <option value="2" selected>2 Persons</option>
+            <option value="3">3 Persons</option>
+            <option value="4">4 Persons</option>
+            <option value="5+">5+ Persons (Family)</option>
+          </select>
+        </div>
+
+        <!-- Blessing / Wishes -->
+        <div class="rsvp-form-group">
+          <label for="rsvpMessage" class="rsvp-label">Warm Wishes / Message for the Couple</label>
+          <textarea id="rsvpMessage" name="message" class="rsvp-textarea" rows="3" placeholder="Write a heartfelt dua or warm congratulations..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-royal-solid rsvp-submit-btn">
+          <span>Send RSVP Confirmation</span>
+        </button>
+      </form>
+
+      <!-- Success Notification State -->
+      <div id="rsvpSuccessState" class="rsvp-success-state" hidden>
+        <div class="rsvp-success-icon">✨</div>
+        <h4>Jazakallahu Khair!</h4>
+        <p id="rsvpSuccessMessage">Your response has been received with sincere warmth. We look forward to celebrating together!</p>
+        <button id="rsvpSuccessCloseBtn" class="btn-gold-outline" style="margin-top: 1.5rem;">
+          Back to Invitation
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Music Audio Element Fallback -->
+  <audio id="weddingMusicAudio" preload="auto" loop hidden>
+    <!-- Web Audio API Synthesizer handles high quality audio natively -->
+  </audio>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>
